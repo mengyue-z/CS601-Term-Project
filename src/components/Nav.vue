@@ -1,10 +1,10 @@
 <template>
     <nav class = "nav-bar">
-        <a href="index.html">About Me</a>
-        <a href="carrot.html">About Carrot</a>
-        <a href="gallery.html">My Gallery</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <router-link to="/">About Me</router-link>
+        <router-link to="/carrot">About Carrot</router-link>
+        <router-link to="/gallery">My Gallery</router-link>
+        <router-link to="/portfolio">Portfolio</router-link>
+        <router-link to="/contact">Contact Me</router-link>
     </nav>
 </template>
 
@@ -33,5 +33,12 @@
 .nav-bar a.active {
     background-color: #ddd;
     color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar a {
+      float: none;
+      width: 100%;
+    }
 }
 </style>

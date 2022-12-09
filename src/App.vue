@@ -1,21 +1,20 @@
 <script>
-import Nav from './components/Nav.vue'
+import Nav from "./components/Nav.vue";
 
 export default {
-  components :{
+  components: {
     Nav,
-  }
-}
+  },
+};
 </script>
 
 <template>
   <header>
-    <div class="wrapper">
-      <Nav />
-    </div>
+    <Nav />
   </header>
-
   <main>
+    <router-view>
+  </router-view>
   </main>
 </template>
 
