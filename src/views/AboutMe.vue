@@ -1,6 +1,5 @@
 <template>
     <article class="details">
-        <section>
             <header>
                 <h2>About Me</h2>
             </header>
@@ -14,7 +13,6 @@
             </p>
             <p>Thanks for visiting my site! Please feel free to reach me at the contact page.</p>
             <img id = "my-pic" src="https://mengyue-z.github.io/Portfolio/images/aboutme.jpeg" alt="my photo in iceland">
-        </section>
     </article>
 </template>
 
