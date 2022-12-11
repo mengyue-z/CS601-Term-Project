@@ -1,100 +1,41 @@
 <template>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="../assets/image1.png" style="width: 100%" />
-      <div class="text">Caption Text</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="../assets/image2.png" style="width: 100%" />
-      <div class="text">Caption Two</div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="../assets/image3.png" style="width: 100%" />
-      <div class="text">Caption Three</div>
-    </div>
-
-    <a class="prev" v-on:click="plusSlides(-1)">❮</a>
-    <a class="next" v-on:click="plusSlides(1)">❯</a>
+  <header>
+    <h1>Photo Gallery</h1>
+  </header>
+  <div class="paragraph">
+    <p>
+      I am a passionate traveler. I love exploring new places and experiencing
+      different cultures.
+      Over the years, I have had the opportunity to visit many amazing
+      destinations around the world, from the bustling cities of Europe to the
+      stunning beaches of the Caribbean. I also enjoy trying new foods and
+      trying my hand at local traditions and customs.
+    </p>
+    <p>Check out some of my favorite photos around the world!</p>
   </div>
+  <Slider class="slideshow-container" />
 </template>
 
 <script>
+import Slider from "../components/Slider.vue";
 export default {
-    methods: {
-      plusSlides: function(n) {
-        showSlides((slideIndex += n));
-      }
-    }
+  components: {
+    Slider,
+  },
 };
 </script>
 
-
 <style scoped>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
+header {
+  margin: 20px;
+}
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  margin: 20px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.paragraph {
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
 }
 </style>

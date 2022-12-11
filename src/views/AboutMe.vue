@@ -2,7 +2,8 @@
   <header>
     <h1>About Me</h1>
   </header>
-  <article class="details">
+  <div class="wrapper">
+  <article class="flex-item details">
     <p>Hello, my name is Mengyue Zhang.</p>
     <p>
       I'm currently working as a Java Developer and attending school at Boston
@@ -23,7 +24,8 @@
       alt="my photo in iceland"
     />
   </article>
-  <ContactCard />
+  <ContactCard class="flex-item"/>
+</div>
 </template>
 
 <style scoped>
@@ -31,13 +33,35 @@ header {
   margin: 20px;
 }
 article {
+  margin-left: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  flex: 1 1 150px;
   margin: 20px;
+  margin-top:0px;
+  gap: 1rem;
+}
+
+.details {
+  flex-grow: 4;
+  width:70%;
+}
+.details p{
+  width:80%;
 }
 
 @media screen and (max-width: 600px) {
   #my-pic {
     width: 200px;
   }
+
 }
 </style>
 
