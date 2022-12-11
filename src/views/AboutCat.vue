@@ -1,8 +1,8 @@
 <template>
+  <header>
+    <h1>About Carrot</h1>
+  </header>
   <article>
-    <header>
-      <h2>About Carrot</h2>
-    </header>
     <p>Hi, This is Carrot.</p>
     <p>
       I have lived with Mengyue for 4 years without paying rent. She feeds me
@@ -19,3 +19,22 @@
     </video>
   </article>
 </template>
+
+<style scoped>
+header {
+  margin: 20px;
+}
+article {
+  margin: 20px;
+}
+
+#cat-video {
+    width:350px;
+}
+
+@media screen and (max-width: 600px) {
+  #cat-video {
+    width: 200px;
+  }
+}
+</style>

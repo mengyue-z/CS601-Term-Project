@@ -1,6 +1,7 @@
 <template>
     <nav class = "nav-bar">
-        <router-link to="/">About Me</router-link>
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About Me</router-link>
         <router-link to="/carrot">About Carrot</router-link>
         <router-link to="/gallery">My Gallery</router-link>
         <router-link to="/portfolio">Portfolio</router-link>
@@ -13,6 +14,8 @@
     margin: 0px;
     overflow: hidden;
     background-color: #BBBFCA;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
 }
 
 .nav-bar a {

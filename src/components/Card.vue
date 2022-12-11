@@ -5,6 +5,14 @@ export default {
       type: String,
       default: `https://mengyue-z.github.io/Portfolio/images/aboutme.jpeg`,
     },
+    gitLink: {
+      type: String,
+      default: `https://github.com/mengyue-z`,
+    },
+    demoLink: {
+      type: String,
+      default: `https://github.com/mengyue-z`,
+    },
     imageAltText: {
       type: String,
       default: `hidden card`,
@@ -28,6 +36,8 @@ export default {
   <div class="container">
     <h2>{{projectName}}</h2> 
     <p>{{projectDescription}}</p> 
+    <a :href="gitLink" target="blank"><button>Github</button></a>
+    <a :href="demoLink" target="blank"><button>Demo</button></a>
   </div>
 </div>
 </template>
@@ -36,7 +46,8 @@ export default {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 30%;
+  width: 50%;
+  background-color:#F4F4F2;
 }
 
 .card:hover {
@@ -44,10 +55,16 @@ export default {
 }
 
 .container {
-  padding: 2px 16px;
+  padding: 20px 16px;
 }
 
-@media maxWidth {
-    
+button {
+    display: inline-block;
+    margin-right:20px;
+    cursor:pointer;
+    text-align: center;
+    padding:0.375rem;
+    margin-right:20px;
 }
+
 </style>
