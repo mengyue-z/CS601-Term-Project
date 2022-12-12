@@ -9,11 +9,11 @@
         target="blank"
         ><img
           class="icons"
-          :src="'public/linkedin.png'"
+          :src="'linkedin.png'"
           alt="linkedin icon"
       /></a>
       <a class="icons" href="https://github.com/mengyue-z" target="blank"
-        ><img class="icons" :src="'public/github.png'" alt="github icon"
+        ><img class="icons" :src="'github.png'" alt="github icon"
       /></a>
     </div>
     <button
