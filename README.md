@@ -10,9 +10,9 @@
 
 # Links
 
-* The URLs of the deployed website: 
+* The URLs of the deployed website: https://merry-fox-654734.netlify.app
 
-* The URLs of the GitHub repositories: https://github.com/mengyue-z/react-portfolio
+* The URLs of the GitHub repositories: https://github.com/mengyue-z/CS601-term-project/
 
 # Technologies Used
 
