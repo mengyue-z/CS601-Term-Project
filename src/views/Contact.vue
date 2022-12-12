@@ -4,7 +4,7 @@
   </header>
 
   <main class="contact-info">
-    <img src="public/phone.jpg" alt="phone" width="240" />
+    <img :src="'public/phone.jpg'" alt="phone" width="240" />
     <p>Name: Mengyue Zhang</p>
     <p>Email: mengyue.z@outlook.com</p>
     <a
