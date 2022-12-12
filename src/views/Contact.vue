@@ -4,16 +4,16 @@
   </header>
 
   <main class="contact-info">
-    <img src="../assets/phone.jpg" alt="phone" width="240" />
+    <img src="public/phone.jpg" alt="phone" width="240" />
     <p>Name: Mengyue Zhang</p>
     <p>Email: mengyue.z@outlook.com</p>
     <a
       href="https://www.linkedin.com/in/mengyue-zhang-71501913b/"
       target="blank"
-      ><img class="icons" :src="'src/assets/linkedin.png'" alt="linkedin icon"
+      ><img class="icons" :src="'public/linkedin.png'" alt="linkedin icon"
     /></a>
     <a class="icons" href="https://github.com/mengyue-z" target="blank"
-      ><img class="icons" :src="'src/assets/github.png'" alt="github icon"
+      ><img class="icons" :src="'public/github.png'" alt="github icon"
     /></a>
     <a
       :href="'https://drive.google.com/file/d/1SHZsw8mE4ofIOPHp5nPhgxqj-wQbuPmF/view?usp=sharing'"

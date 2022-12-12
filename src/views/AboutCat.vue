@@ -23,7 +23,7 @@
     </article>
     <div class="flex-item">
       <video id="cat-video" controls>
-        <source src="../assets/cat.mp4" type="video/mp4" />
+        <source src="public/cat.mp4" type="video/mp4" />
       </video>
     </div>
   </div>
