@@ -34,6 +34,11 @@ export default {
         })
         .catch((error) => {
           console.log(error);
+          //print some error message for users
+          let errorMessage = document.createTextNode(
+            "Sorry there is some problem generating the quote, please refresh the page and try again."
+          );
+          document.getElementById("quote").append(errorMessage);
         });
     },
   },
@@ -47,12 +52,12 @@ export default {
 .dashboard {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 1.5vmax;
   color: #784d80;
   letter-spacing: 2px;
   margin: 20px;
-  width:70%;
-  margin-left:auto;
-  margin-right:auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

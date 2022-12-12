@@ -1,4 +1,3 @@
-
 body {
     margin: 0px;
     margin-bottom: 60px;
@@ -8,15 +7,26 @@ body {
 h1 {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 2px;
-    color:#808db1;
+    color: #808db1;
 }
 
 
 /* remove all text decoration for links */
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 
 p {
     font-family: "Montserrat", sans-serif;

@@ -5,11 +5,10 @@
   <div class="paragraph">
     <p>
       I am a passionate traveler. I love exploring new places and experiencing
-      different cultures.
-      Over the years, I have had the opportunity to visit many amazing
-      destinations around the world, from the bustling cities of Europe to the
-      stunning beaches of the Caribbean. I also enjoy trying new foods and
-      trying my hand at local traditions and customs.
+      different cultures. Over the years, I have had the opportunity to visit
+      many amazing destinations around the world, from the bustling cities of
+      Europe to the stunning beaches of the Caribbean. I also enjoy trying new
+      foods and trying my hand at local traditions and customs.
     </p>
     <p>Check out some of my favorite photos around the world!</p>
   </div>

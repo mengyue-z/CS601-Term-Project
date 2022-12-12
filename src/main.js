@@ -9,6 +9,7 @@ import Gallery from "./views/Gallery.vue"
 import Portfolio from "./views/Portfolio.vue"
 import Contact from "./views/Contact.vue"
 
+//router for different pages
 const router = createRouter ({
     history: createWebHistory(),
     routes: [

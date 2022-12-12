@@ -1,5 +1,5 @@
 <template>
-      <header>
+  <header>
     <h1>Projects</h1>
   </header>
   <div class="wrapper">
@@ -49,9 +49,8 @@ export default {
 </script>
 
 <style scoped>
-
 header {
-    margin:20px;
+  margin: 20px;
 }
 .wrapper {
   display: flex;
@@ -63,5 +62,14 @@ header {
   flex: 1 1 150px;
   margin: 20px;
   gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    display: block;
+  }
+  .card {
+    width: 80%;
+  }
 }
 </style>

@@ -1,14 +1,22 @@
 # CS601-term-project
 
-This template should help get you started developing with Vue 3 in Vite.
+* This is my portfolio built using Vue.js Framework.
 
-## Recommended IDE Setup
+* The About Me page has my bio and contact information. 
+* The About Cat page has my cat Carrot's bio.
+* The My Gallery page has a slidershow of some photos I took all over the world.
+* The Portfolio page contains my projects and for each project there are links that direct to the github repo and live demo.
+* The Contact page has my contact information. 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# Links
 
-## Customize configuration
+* The URLs of the deployed website: 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+* The URLs of the GitHub repositories: https://github.com/mengyue-z/react-portfolio
+
+# Technologies Used
+
+* Vue.js
 
 ## Project Setup
 

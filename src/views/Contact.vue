@@ -16,9 +16,9 @@
       ><img class="icons" :src="'src/assets/github.png'" alt="github icon"
     /></a>
     <a
-      :href="'https://drive.google.com/file/d/1zxjciE4sE_cicu0VZU4fhcCvkNTY-aGR/view?usp=sharing'"
+      :href="'https://drive.google.com/file/d/1SHZsw8mE4ofIOPHp5nPhgxqj-wQbuPmF/view?usp=sharing'"
       target="blank"
-      ><button >View My Resume</button></a
+      ><button>View My Resume</button></a
     >
   </main>
 </template>
@@ -37,14 +37,14 @@ main {
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 button {
-    text-decoration: none;
-    display: block;
-    cursor:pointer;
-    text-align: center;
-    padding:0.375rem;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.375rem;
 }
 </style>
 

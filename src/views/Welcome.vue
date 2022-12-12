@@ -25,7 +25,7 @@ header {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 4vw;
+  font-size: 4vmax;
   color: #784d80;
   letter-spacing: 2px;
   margin-top: 0;

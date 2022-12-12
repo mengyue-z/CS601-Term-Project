@@ -1,43 +1,44 @@
 <template>
-    <div class="slider-container">
-      <img :src="currentImage" />
-      <button id="btn-prev" @click="prevImage">Prev</button>
-      <button id="btn-next" @click="nextImage">Next</button>
-    </div>
-  </template>
+  <div class="slider-container">
+    <img :src="currentImage" />
+    <button id="btn-prev" @click="prevImage">Prev</button>
+    <button id="btn-next" @click="nextImage">Next</button>
+  </div>
+</template>
   
   <script>
-  export default {
-    name: 'ImageSlider',
-    data() {
-      return {
-        currentIndex: 0,
-        images: [
-          'src/assets/image1.png',
-          'src/assets/image2.png',
-          'src/assets/image3.png',
-          'src/assets/image4.png',
-          'src/assets/image5.png',
-          'src/assets/image6.png',
-          'src/assets/image7.png'
-        ],
-      };
+export default {
+  name: "ImageSlider",
+  data() {
+    return {
+      currentIndex: 0,
+      images: [
+        "src/assets/image1.png",
+        "src/assets/image2.png",
+        "src/assets/image3.png",
+        "src/assets/image4.png",
+        "src/assets/image5.png",
+        "src/assets/image6.png",
+        "src/assets/image7.png",
+      ],
+    };
+  },
+  computed: {
+    currentImage() {
+      return this.images[this.currentIndex];
     },
-    computed: {
-      currentImage() {
-        return this.images[this.currentIndex];
-      },
+  },
+  methods: {
+    prevImage() {
+      this.currentIndex =
+        (this.currentIndex - 1 + this.images.length) % this.images.length;
     },
-    methods: {
-      prevImage() {
-        this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
-      },
-      nextImage() {
-        this.currentIndex = (this.currentIndex + 1) % this.images.length;
-      },
+    nextImage() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
     },
-  };
-  </script>
+  },
+};
+</script>
 
   <style scoped>
 .slider-container {
@@ -73,7 +74,7 @@
   outline: none;
 }
 
-#btn-prev{
+#btn-prev {
   left: 1em;
 }
 
@@ -82,55 +83,52 @@
 }
 
 @media only screen and (max-width: 1150px) {
+  .slider-container {
+    width: 100%;
+    margin: 0 !important;
+    height: 400px;
+  }
 
-    .slider-container {
-  width: 100%;
-  margin:0 !important;
-  height: 400px;
-}
+  .slider-container img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 
-.slider-container img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.slider-container button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0.5em 1em;
-  background: white;
-  border: none;
-  font-size: 1em;
-  cursor: pointer;
-}
+  .slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5em 1em;
+    background: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 750px) {
+  .slider-container {
+    width: 100%;
+    margin: 0 !important;
+    height: 400px;
+  }
 
-.slider-container {
-width: 100%;
-margin:0 !important;
-height: 400px;
-}
+  .slider-container img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 
-.slider-container img {
-max-height: 100%;
-max-width: 100%;
-}
-
-.slider-container button {
-position: absolute;
-margin-top:20px;
-top: 100%;
-transform: translateY(-50%);
-padding: 0.5em 1em;
-background: white;
-border: none;
-font-size: 1em;
-cursor: pointer;
-}
-
+  .slider-container button {
+    position: absolute;
+    margin-top: 20px;
+    top: 100%;
+    transform: translateY(-50%);
+    padding: 0.5em 1em;
+    background: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+  }
 }
 </style>
   
