@@ -13,13 +13,13 @@ export default {
     return {
       currentIndex: 0,
       images: [
-        "../../public/image1.png",
-        "../../public/image2.png",
-        "../../public/image3.png",
-        "../../public/image4.png",
-        "../../public/image5.png",
-        "../../public/image6.png",
-        "../../public/image7.png",
+        "image1.png",
+        "image2.png",
+        "image3.png",
+        "image4.png",
+        "image5.png",
+        "image6.png",
+        "image7.png",
       ],
     };
   },
