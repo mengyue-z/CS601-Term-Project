@@ -23,7 +23,7 @@
       :imageUrl="'well-finder.png'"
       :imageAltText="'Wellness Place Finder screenshot'"
       :projectName="'Wellness Place Finder'"
-      :projectDescription="'A project and employee management application built in React with a Mongo database.'"
+      :projectDescription="'Wellness website that will search APIs to find closest exercise classes and calculate their Body Mass Index (BMI).'"
       :gitLink="'https://github.com/mengyue-z/Wellness-Place-Finder'"
       :demoLink="'https://mengyue-z.github.io/Wellness-Place-Finder'"
     />
